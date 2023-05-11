@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <style>
+        /* Experience 버튼 클릭 시 다른 버튼 배경색 흰색으로 변경 */
+        .nav-pills .nav-link.active,
+        .nav-pills .show > .nav-link {
+            background-color: #ffae00 !important;
+            color: #ffffff;
+        }
+
+        /* Education 버튼 배경색 노랑색으로 변경 */
+        .nav-pills .nav-link:not(.active) {
+            background-color: #ffffff !important;
+            color: #212529;
+        }
+    </style>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>김무경 | Java 백엔드 개발자</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+          rel="stylesheet">
+    <link href="vendors/prism/prism.css" rel="stylesheet">
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet"/>
+    <link href="assets/css/user.css" rel="stylesheet"/>
+    </div>
+</head>
+
+<body>
+
+<!-- ===============================================-->
+<!--    Main Content-->
+<!-- ===============================================-->
+<main class="main" id="top">
+   
+    <nav class="navbar navbar-light py-3 px-0 overflow-hidden">
+
+      <div class="container px-md-5">
+
+            <div class="row w-100 g-0 justify-content-between">
+
+                <div class="col-8">
+                    <div class="d-inline-block"><a class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center"href="index.html">
+                        <img class="img-fluid" src="assets/img/icons/logo-icon.png" alt=""/>
+                        <span class="fw-bolder ms-2">김무경</span><span class="fw-thin"> Portfolio</span></a>
+                    </div>
+                </div>
+
+                <div class="col-4 d-lg-none text-end pe-0">
+                    <button class="btn p-0 shadow-none text-black fs-2 d-inline-block" data-bs-toggle="offcanvas"
+                            data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                            aria-label="Toggle offcanvas navigation">
+                            <span class="menu-bar"></span>
+                    </button>
+                </div>
+
+                <div class="offcanvas offcanvas-end px-0" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasTitle" aria-hidden="true">
+                    <div class="offcanvas-header justify-content-end">
+                        <h5 class="visually-hidden offcanvas-title" id="navbarOffcanvasTitle">Menu</h5>
+                        <button class="btn p-0 shadow-none text-black fs-2 d-inline text-end" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                          <span class="menu-close-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body px-0">
+
+                        <div class="d-lg-flex flex-center-start gap-3 overflow-hidden">
+
+                            <ul class="navbar-nav ms-auto fs-4 ps-6">
+                                <li class="nav-item"><a
+                                        class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active"
+                                        aria-current="page" href="index.html">Home</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                        aria-current="page" href="portfolio.html">Skills</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                        aria-current="page" href="gallery.html">Gallery</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                        aria-current="page" href="exhibitions.html">Exhibitions</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                        aria-current="page" href="about.html">About</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5"
+                                        aria-current="page" href="blog.html">Blog</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+              </div>
+
+
+                <div class="col-4">
+
+                    <div class="d-none d-lg-flex justify-content-end position-relative z-index-1">
+
+                        <div class="position-absolute absolute-centered z-index--1">
+                            <h1 class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1">Home</h1>
+                        </div>
+
+                        <div class="d-flex gap-3 align-items-start">
+                          <a class="mb-0 ms-auto text-warning fs-0 fw-bold text-uppercase" href="blog.html#contact">Contact Now</a>
+                            <ul class="navbar-nav navbar-fotogency ms-auto text-end">
+
+                                <li class="nav-item px-2 position-relative">
+                                  <a class="nav-link pt-0 active" ria-current="page" href="index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item px-2 position-relative">
+                                  <a class="nav-link pt-0" aria-current="page" href="#skills">Skills</a>
+                                </li>
+
+                                <li class="nav-item px-2 position-relative">
+                                  <a class="nav-link pt-0" aria-current="page" href="#education">Education & Experience</a>
+                                </li>
+
+                                <li class="nav-item px-2 position-relative">
+                                  <a class="nav-link pt-0" aria-current="page" href="#project1">Project1</a>
+                                </li>
+
+                                <li class="nav-item px-2 position-relative">
+                                  <a class="nav-link pt-0" aria-current="page" href="#project2">Project2</a>
+                                </li>
+
+                                <li class="nav-item px-2 position-relative">
+                                  <a class="nav-link pt-0" aria-current="page" href="#project3">Project3</a>
+                                </li>
+
+                                <li class="nav-item px-2 position-relative">
+                                  <a class="nav-link pt-0" aria-current="page" href="#footer">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+      <section class="py-4 pt-md-0 pb-8 pb-sm-11 mt-lg-n8">
+
+        <div class="container px-md-5">
+            <div class="row mb-8">
+                <div class="col-md-9 col-lg-7">
+                    <h1 class="fs-4 fs-md-6 fs-xl-7 mb-5 mb-lg-0 position-relative z-index-2">안녕하세요. <br>
+                        <span class="fw-thin text-300">저는 Java 백엔드 신입 개발자</span>
+                        <span class="text-400"><br>김무경입니다.</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row mt-md-n6 mb-3">
+                <div class="position-absolute bottom-n100 col-11 mt-6 d-none d-md-block">
+                    <p class="fs-2 lh-1 text-400">기술 스택과 실력을 향상시켜, 사용자가 편리하고 안전한 서비스를 경험할 수 있는 세상을 만들고 싶습니다. </p>
+                    <p class="text-300">개발자로서 항상 새로운 기술과 도구를 익히며 개발 역량을 확장하고, 이를 통해 기술 발전에도 기여하고자 합니다.<br>
+                        다양한 기술 스택과 프로젝트 경험을 쌓으며, 개발 분야의 지식을 넓히고, 다른 개발자들과 지식을 공유하며 함께 성장하는 것이 비전입니다.<br>
+                        또한, 개발자로서 사회적 책임을 다하고, 사회에 도움이 되는 기술을 개발하고싶습니다.<br>
+                        이를 위해 더 나은 코드 퀄리티와 개발 방법론을 고민하며, 새로운 기술을 적용해 더 나은 서비스를 만들어 나가는 것이 목표입니다.</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of .container-->
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+    <section class="py-1" id="skills">
+        <div class="container-fluid px-0 mb-4 col-10 justify-content-center">
+            <div id="skill" class="mb-3">
+                <div class="container col-12">
+                    <div class="column g-5">
+                        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s"
+                             style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                            <h1 class="display-5 mb-5">Skills &amp; Experience</h1>
+                            <hr>
+                            <h1 class="mb-4">My Skills</h1>
+                            <div class="row align-items-center">
+                                <div class="col-md-12">
+                                    <div class="skill mb-5">
+                                        <div class="d-flex justify-content-start">
+                          <span class="badge bg-warning rounded-3 fw-semibold"
+                                style="margin-right: 50px; font-size: 18px;">Java</span>
+
+                                            <span class="badge bg-warning rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;">Python</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="skill mb-5">
+                                        <div class="d-flex justify-content-start">
+                          <span class="badge bg-warning  rounded-3 fw-semibold"
+                                style="margin-right: 50px; font-size: 18px;">JPA</span>
+                                            <span class="badge bg-warning  rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;">MySQL</span>
+                                            <span class="badge bg-warning  rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;">MyBatis</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill mb-5">
+                                        <div class="d-flex justify-content-start">
+                          <span class="badge bg-warning rounded-3 fw-semibold"
+                                style="margin-right: 50px; font-size: 18px;"> Spring</span>
+                                            <span class="badge bg-warning rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;">Spring Boot</span>
+                                            <span class="badge bg-warning rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;">Spring Security</span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="skill mb-5">
+                                        <div class="d-flex justify-content-start">
+                          <span class="badge bg-warning rounded-3 fw-semibold"
+                                style="margin-right: 50px; font-size: 18px;">JSP</span>
+                                            <span class="badge bg-warning rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;">Ajax</span>
+                                            <span class="badge bg-warning rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;"> jQuery</span>
+                                            <span class="badge bg-warning rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;">Thymeleaf</span>
+                                            <span class="badge bg-warning rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;">bootstrap5</span>
+                                            <span class="badge bg-warning rounded-3 fw-semibold"
+                                                  style="margin-right: 50px; font-size: 18px;">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="education">
+      <div class="container-fluid px-0 mb-4 col-10 justify-content-center">
+          <div class="mb-3">
+              <div class="container col-12">
+                  <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s"
+                       style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                      <ul class="nav nav-pills rounded  mb-5">
+                          <li class="nav-item w-50">
+                              <button class="nav-link w-100 py-3 fs-5 bg-warning active" data-bs-toggle="pill"
+                                      href="#tab-1">Education
+                              </button>
+                          </li>
+                          <li class="nav-item w-50">
+                              <button class=" nav-link w-100 py-3 fs-5 bg-warning" data-bs-toggle="pill"
+                                      href="#tab-2">Experience
+                              </button>
+                          </li>
+                      </ul>
+                      <div class="tab-content">
+                          <div id="tab-1" class="tab-pane fade p-0 active show">
+                              <div class="row gy-5 gx-4">
+                                  <div class="col-sm-12">
+                                      <h4>수원영신여자고등학교</h4>
+                                      <hr class="text-warning my-2">
+                                      <p class="text-warning mb-1" style="font-size: 20px;">2013-02 ~ 2016-02</p>
+                                      <h5 class="mb-0">인문계 고등학교 졸업</h5>
+                                  </div>
+                                  <div class="col-sm-12">
+                                      <h4>안양대학교</h4>
+                                      <hr class="text-warning my-2">
+                                      <p class="text-warning mb-1" style="font-size: 20px;">2019-02 ~ 2023-08
+                                          (졸업예정)</p>
+                                      <h5 class="mb-0">소프트웨어학과 전공</h5>
+                                  </div>
+                                  <div class="col-sm-12">
+                                      <h4>이젠컴퓨터아카데미수원</h4>
+                                      <hr class="text-warning my-2">
+                                      <p class="text-warning mb-1" style="font-size: 20px;">2022-10-27 ~
+                                          2023-04-19</p>
+                                      <h5 class="mb-0">기업 요구사항을 반영한 자바&파이썬기반 빅데이터활용 풀스택개발자 양성 과정 정상수료</h5>
+                                  </div>
+                              </div>
+                          </div>
+                          <div id="tab-2" class="tab-pane fade p-0">
+                              <div class="row gy-5 gx-4">
+                                  <div class="col-sm-12">
+                                      <h4>졸업 프로젝트</h4>
+                                      <hr class="text-warning my-2">
+                                      <p class="text-warning mb-1" style="font-size: 20px;">2022-09-12 ~ 2022-11-27
+                                          (2개월 16일)</p>
+                                      <h5 class="mb-0">시각 장애인도 사용 가능한 가계부</h5>
+                                  </div>
+                                  <div class="col-sm-12">
+                                      <h4>(주)핸디소프트 실습생</h4>
+                                      <hr class="text-warning my-2">
+                                      <p class="text-warning mb-1" style="font-size: 20px;">2022-07 ~ 2022-08
+                                          (2개월)</p>
+                                      <h5 class="mb-0">하계방학 현장실습</h5>
+                                  </div>
+                                  <div class="col-sm-12">
+                                      <h4>기업체 요청 ERP 프로젝트</h4>
+                                      <hr class="text-warning my-2">
+                                      <p class="text-warning mb-1" style="font-size: 20px;">2023-02-03 ~ 2023-02-24
+                                          (22일)</p>
+                                      <h5 class="mb-0">기업 요구사항을 반영한 ERP 프로젝트</h5>
+                                  </div>
+                                  <div class="col-sm-12">
+                                      <h4>여행지 정보 공유 블로그</h4>
+                                      <hr class="text-warning my-2">
+                                      <p class="text-warning mb-1" style="font-size: 20px;">2023-02-17 ~ ing</p>
+                                      <h5 class="mb-0">Google Maps API를 사용하여 사용자들의 여행지 정보를 공유하는 블로그</h5>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+            <!-- ============================================-->
+            <!-- 시각 장애인도 사용 가능한 가계부 <section> begin ============================-->
+                <section class="py-3 position-relative" id="project1">
+                    <div class="container-fluid px-0 mb-8 col-10">
+                        <h1 class="display-5 mb-3">Project</h1>
+                        <hr>
+                        <div class="portfolio_details_inner">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="left_img">
+                                        <img class="img-fluid"
+                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FXGguG%2FbtseK3nMHFA%2ForVxulTkpxLTh2436OMtF1%2Fimg.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-5">
+                                    <div class="portfolio_right_text mt-30">
+                                        <h4 class="text-uppercase mb-6">시각 장애인도 사용 가능한 가계부</h4>
+
+                                        <span>작업 기간</span>: 2022-09-12 ~ 2022-11-27<br>
+                                        <span>참여 인원</span>: 2명<br>
+                                        <span>기여도</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><br>
+                                        <span>프로젝트 목적 : </span>모든 사용자가 사용 가능한 가계부<br>
+                                        <span>사용언어 및 개발 환경</span>
+                                        : Mysql, Java, PHP, Android Studio<br><br>
+
+                                        <span>주요 역할</span><br>
+                                        화면 설계<br>
+                                        로그인, 회원가입, 메인 화면 설계<br>
+                                        카메라 촬영 및 갤러리 사진으로 지출 내역 작성<br>
+                                        촬영 및 갤러리 이미지의 텍스트 인식 및 전처리<br>
+                                        Text-to-Speech API로 텍스트를 인식하여 음성으로 변환<br>
+                                        당월 기준 카테고리별 지출 내역 분석 및 음성 안내
+
+
+                                        <p class="fs-0 mt-3">
+                                            해당 프로젝트는 졸업 프로젝트로 진행된 프로젝트입니다.<br>
+                                            기존에 수기로 작성할 수 있는 가계부에 음성 입력 및 출력과 OCR 기능을 사용하여 시각 장애인도 가계부를 관리할 수 있도록
+                                            개발되었습니다.<br>
+                                            JAVA, PHP와 Eclipse, Android Studio, MySQL Workbench 등의 개발 도구를 사용하였으며, OCR,
+                                            TTS, SST API를 활용하여
+                                            사용자가 음성으로 텍스트 입력 및 텍스트 출력할 수 있습니다.<br>
+                                            시각적 정보와 더불어 대신 음성 안내와 터치 기능을 사용하여 사용자가 보다 쉽게 가계부를 관리할 수 있습니다.
+                                            <br><br>
+                                        </p>
+
+                                        <button class="btn btn-link text-warning p-0 fs-2"><a class="fw-bolder"
+                                                                                              href="">github </a>
+                                            <img class="ms-3" src="assets/img/icons/long-arrow.png" alt=""/></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section> close ============================-->
+                <!-- ============================================-->
+
+                <!-- ============================================-->
+                <!-- <section> begin ============================-->
+                <section class="py-3 position-relative">
+                    <div class="container-fluid px-0 mb-4 col-10">
+                        <h1 class="display-5 mb-3">Project Detail Slide</h1>
+                        <hr>
+                        <div class="container px-md-5">
+                            <div class="row g-0">
+
+                                <div class="col-lg-12 pb-6 px-0 mb-lg-0">
+                                    <div class="swiper-container swiper-theme"
+                                         data-swiper='{"slidesPerView":1,"breakpoints":{"576":{"slidesPerView":1.2}},"spaceBetween":30,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"loop":true,"loopedSlides":3,"slideToClickedSlide":true}'>
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpBZQW%2FbtseHQpcuRH%2FFfKqqGlf6SNgVvvR2VEi00%2Fimg.jpg"
+                                                             alt=""/>
+
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"/></div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">프로젝트 상세 기술 스택</p>
+                                                        <p class="fs-0 mt-3">
+                                                            Back-End<br>Java 11, RESTful API, Mybatis,
+                                                            Swagger3.0<br><br>
+
+                                                            Front-End<br>
+                                                            HTML5, CSS, JavaScript<br><br>
+
+                                                            Server<br>
+                                                            Apache Tomcat<br><Br>
+
+                                                            DB<br>
+                                                            MySQL<br><br>
+
+                                                            Spring Security - JWT 인증을 구현하여 URL 별 인가 처리를 구현했습니다.<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbR7ZmL%2FbtseK3afxnN%2Fp0yDdaeqtSmlbfJI0GsDj1%2Fimg.jpg"
+                                                             alt=""/>
+
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">로그인 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            로그인은 아이디와 비밀번호를 입력한 후, 로그인 버튼을 눌러 로그인 할 수 있도록 구현했습니다.<br>
+                                                            아이디와 비밀번호는 회원으로 등록된 아이디와 비밀번호로만 로그인이 가능합니다.<br><br>
+                                                            로그인 기능은 가족 공유 기능을 위해 추가하였습니다. 추후 음성 입력과 공유 기능으로 확대할 예정입니다.
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FNn8yd%2FbtseK7Ksyff%2Fp98KN42KSKPN3GNPiluCDk%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">회원가입 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            회원가입은 아이디, 비밀번호, 이름, 나이를 모두 입력해야 회원가입이 가능하도록 구현했습니다.<br><br>
+                                                            아이디는 영어 3자리만 입력할 수 있습니다.<br>
+                                                            비밀번호는 숫자 4자리만 입력할 수 있습니다.<br>
+                                                            이름은 한글과 영어만 입력할 수 있습니다.<br>
+                                                            나이는 숫자만 입력할 수 있습니다.<br><br>
+                                                            아이디는 아이디를 입력 후, 확인 버튼을 눌러 중복 확인을 해야 합니다.<br>
+                                                            확인 버튼 클릭 시, 같은 아이디가 있다면 "사용할 수 없는 아이디입니다."라고 출력되고 아이디를 수정해야
+                                                            합니다.<br>
+                                                            사용할 수 있는 아이디이면 “사용할 수 있는 아이디입니다.”가 출력되고 해당 아이디는 수정할 수
+                                                            없습니다.<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzWXDO%2FbtseIGzR9E1%2FJBlsFqZdeXfKRsps4KpKlk%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">메뉴 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            메인 화면은 각 메뉴로 이동할 수 있는 메뉴 버튼과 음성 입력으로 메뉴로 이동할 수 있는 음성 인식 버튼으로
+                                                            구성되어 있습니다.<br>
+                                                            메뉴 버튼을 통해 메뉴로 이동하려면 해당 메뉴 버튼을 클릭하여 이동할 수 있습니다.<br>
+                                                            음성 입력을 통해 메뉴로 이동하려면 음성 인식 버튼을 클릭하여 메뉴를 말하면 이동할 수 있습니다.<br>
+                                                            메뉴가 아닌 다른 음성을 입력하면 “다시 입력해주세요”가 출력되고 다시 버튼을 눌러 말할 수
+                                                            있습니다.<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcpngmJ%2FbtseHPw4vqp%2FlZj1XLzyl8WgDOf203qfkK%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">캘린더 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            캘린더 화면에서 하단의 음성 입력 버튼을 클릭하여 음성으로 해당 날짜로 자동 포커싱됩니다.<br>
+                                                            지출과 수입 금액아 화면 출력 및 음성 출력이 됩니다.<br>또는 해당 날짜를 클릭하여 해당 날짜의 지출,
+                                                            수입 금액을 확인할 수 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcDrkAo%2FbtseCEjjFHy%2FgJAAkK0mySKSk9etZe3RKK%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">수입 작성 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            수입 작성 기능을 구현했습니다.<br>
+                                                            수기 작성 및 음성 작성으로 수입 작성이 가능합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fwi5Li%2FbtseK39ah7C%2Fi181rtNclKpSVGLytxN700%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">수입 음성 작성 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            수입 음성 작성 기능을 구현했습니다.<br>
+                                                            수입을 음성 입력을 할 경우, 수입 음성 입력 화면에서 날짜, 카테고리, 금액 순으로 입력할 수 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcW8imQ%2FbtseNs8FYLw%2FH5WDm2CY47kJyoo5r4lWGK%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">지출 작성 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            지출 작성 기능을 구현했습니다.<br>
+                                                            사용자는 수기 작성 및 이미지 작성을 선택할 수 있습니다.<br>
+                                                            버튼과 음성 입력으로 원하는 방법을 선택할 수 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4w8MW%2FbtseGL94ehA%2FZhFSGDoehEbNPWeA6aFgIk%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">지출 이미지 작성 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            이미지로 지출 작성이 가능하도록 구현했습니다.<br>
+                                                            사용자는 카메라 촬영 및 갤러리에서 이미지 선택으로 지출 내용을 작성할 수 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc00Gqq%2FbtseHPDRDpY%2Fqr9mEoRydDulQNuWcwcCP0%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">검색 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            검색 기능을 구현했습니다.<br>
+                                                            검색 화면에서 음성 입력 버튼을 클릭하여 카테고리를 말하면, 해당 월의 해당 카테고리 사용 금액을 화면에
+                                                            출력하고, 음성 출력이 됩니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzIFP6%2FbtseG6MRPux%2FFQMrWXNTo1rdOzmnhuEJ6k%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">분석 화면 상세 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            분석 기능을 구현했습니다.<br>
+                                                            당월 기준 카테고리별 지출 내역이 파이 차트로 출력되며, 전체 비용 중 카테고리별 퍼센트를 음성으로
+                                                            출력합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-theme swiper-pagination d-flex mt-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of .container-->
+
+                </section>
+                <!-- <section> close ============================-->
+                <!-- ============================================-->
+
+                <!-- ============================================-->
+                <!-- 기업체 요청에 맞춘 ERP 시스템 <section> begin ============================-->
+                <section class="py-3 position-relative" id="project2">
+                    <div class="container-fluid px-0 mb-8 col-10">
+                        <h1 class="display-5 mb-3">Project</h1>
+                        <hr>
+                        <div class="portfolio_details_inner">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="left_img">
+                                        <img class="img-fluid"
+                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/012023-02-24%2016%2014%2053.png"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-5">
+                                    <div class="portfolio_right_text mt-30">
+                                        <h4 class="text-uppercase mb-6">기업체 요청에 맞춘 ERP 시스템</h4>
+
+                                        <span>작업 기간</span>: 2022-02- ~ 2022-02<br>
+                                        <span>참여 인원</span>: 9명<br>
+                                        <span>기여도</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                            class="fa fa-star"></i><br>
+                                        <span>프로젝트 목적 : </span>기존에 엑셀로 관리되던 현장 작업내역들을 ERP 시스템으로 관리<br>
+                                        <span>사용언어 및 개발 환경</span>
+                                        : Mysql, Java, spring-boot, mybatis, spring-mvc, html-css-javascript,
+                                        bootstrap5,
+                                        springsecurity-jwt<br><br>
+                                        <span>주요 역할</span><br>
+                                        기본 정보 관리 부분의 장비 등록/수정/삭제, <br>
+                                        현장 정보 관리 부분의 장비대여 등록/수정/삭제,<br>
+                                        회계 정보 관리 부분의 인건비 등록/수정/삭제
+
+
+                                        <p class="fs-0 mt-3">
+                                            해당 프로젝트는 기업체의 요청을 받아 진행된 프로젝트입니다.<br>
+                                            기존에 엑셀로 관리되던 현장 작업내역들을 ERP 시스템으로 관리할 수 있도록 개발되었습니다.<br>
+                                            매입, 매출 내역관리 및 장비렌탈 현황 그리고 미수금 내역들을 볼 수 있습니다.<br>
+                                            Spring Security를 활용하여 사용자는 유저들의 권한을 관리 할 수 있습니다.
+                                        </p>
+
+                                        <button class="btn btn-link text-warning p-0 fs-2"><a class="fw-bolder"
+                                                                                              href="https://github.com/CodingGamePlayer/ahaproject">github </a>
+                                            <img class="ms-3" src="assets/img/icons/long-arrow.png" alt=""/></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section> close ============================-->
+                <!-- ============================================-->
+
+                <!-- ============================================-->
+                <!-- <section> begin ============================-->
+                <section class="py-3 position-relative">
+                    <div class="container-fluid px-0 col-10">
+                        <h1 class="display-5 mb-3">Project Detail Slide</h1>
+                        <hr>
+                        <div class="container px-md-5">
+                            <div class="row g-0">
+
+                                <div class="col-lg-12 pb-6 px-0 mb-lg-0">
+                                    <div class="swiper-container swiper-theme"
+                                         data-swiper='{"slidesPerView":1,"breakpoints":{"576":{"slidesPerView":1.2}},"spaceBetween":30,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"loop":true,"loopedSlides":3,"slideToClickedSlide":true}'>
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/122023-02-24%2016%2016%2045.png"
+                                                             alt=""/>
+
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"/></div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">프로젝트 상세 기술 스택</p>
+                                                        <p class="fs-0 mt-3">
+                                                            Back-End<br>Java 11, RESTful API, Mybatis,
+                                                            Swagger3.0<br><br>
+
+                                                            Front-End<br>
+                                                            HTML5, CSS, JavaScript<br><br>
+
+                                                            Server<br>
+                                                            Apache Tomcat<br><Br>
+
+                                                            DB<br>
+                                                            MySQL<br><br>
+
+                                                            Spring Security - JWT 인증을 구현하여 URL 별 인가 처리를 구현했습니다.<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/162023-02-24%2016%2016%2058.png"
+                                                             alt=""/>
+
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">서비스 기획 및 방향성 설계</p>
+                                                        <p class="fs-0 mt-3">
+                                                            서비스는 User Service와 Admin Service가 있습니다.<br><br>
+
+                                                            User Service는 로그인, 기본 정보 관리, 현장 정보 관리, 회계정보 관리, 고객센터가
+                                                            있습니다.<br><br>
+
+                                                            Admin Service는 미수금 관리, 회원 관리가 있습니다.<br>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/202023-02-24%2016%2017%2019.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">사용자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            모든 카테고리에서 데이터 보기, 등록, 수정, 삭제 기능을 구현했습니다.<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/222023-02-24%2016%2017%2027.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">사용자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            검색 기능을 구현했습니다.<br>
+                                                            여러 조건에 따른 검색이 가능하며, 사용여부/완료여부에 따른 검색도 가능합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/232023-02-24%2016%2017%2031.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">사용자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            파일 첨부 및 목록 보기 기능을 구현했습니다.<br>
+                                                            등록 및 수정 폼에서 파일 첨부 기능을 구현하고, 리스트 목록에서 첨부된 파일을 볼 수 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/252023-02-24%2016%2017%2037.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">사용자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            캘린더를 구현했습니다.<br>
+                                                            장비임대 년ㆍ월별 건수 처리 및 캘린더 기능을 구현했습니다.<br>
+                                                            렌트 기간에 따른 캘린더를 구현하여 클릭하면 해당 임대 정보로 이동할 수 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/242023-02-24%2016%2017%2035.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">사용자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            공사 요청 기능을 구현했습니다.<br>
+                                                            공사 요청 사항 등록시 공사명을 선택할 수 있습니다.<br>
+                                                            공사 현황 목록에서 공사명 클릭시 해당 공사에 대한 요청 사항을 확인할 수 있습니다.<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/262023-02-24%2016%2017%2040.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">사용자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            매입 매출 전체 현황 보기 기능을 구현했습니다.<br>
+                                                            회사명 / 거래처명 / 공사명으로 구분하여 모든 매출과 매입을 확인할 수 있습니다.<br>
+                                                            회사명과 거래처명의 부분합을 구현하여 잔액이 0이 되면 완료여부가 변경됩니다.<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/272023-02-24%2016%2017%2043.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">사용자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            QnA 게시판과 자유게시판을 구현했습니다.<br>
+                                                            글쓰기에서 카테고리(공지사항 / 자유게시판 / QnA)를 설정할 수 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/282023-02-24%2016%2017%2048.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">사용자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            게시판 댓글 기능을 구현했습니다.<br>
+                                                            게시판 글 상세보기 우측에 댓글 목록을 구현했습니다.<br>(RESTful을 활용한 비동기 처리)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/292023-02-24%2016%2017%2051.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">관리자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            블랙리스트 기능을 구현했습니다.<br>
+                                                            미수금 현황을 등록하고 블랙리스트를 관리할 수 있습니다.<br>
+                                                            우측 아이콘을 누르면 블랙리스트 변경할 수 있도록 비동기 처리했습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://github.com/CodingGamePlayer/ahaproject/raw/master/src/main/resources/static/image/ppt_screenshot/302023-02-24%2016%2017%2054.png"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">관리자 페이지 주요 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                            계정 관리 기능을 구현했습니다.<br>
+                                                            권한 변경을 누르면 유저 또는 관리자로 권한 변경이 가능하고, 계정 삭제를 누르면 계정이 삭제됩니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-80"
+                                                             src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcbtwIL%2FbtsezMHdTJ1%2Fso3FNEdEJGotons6miKar0%2Fimg.jpg"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center"><span
+                                                                class="rounded-circle bg-white p-2 d-block"></span><span
+                                                                class="text-white fw-bold">2022</span></div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <h1 class="fw-bolder mb-3">시각 장애인도 사용 가능한<br>가계부</h1>
+                                                        <p class="text-warning fs-3 opacity-75">2022-09-23 ~
+                                                            2022-11-27</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="svg-inline--fa fa-circle-dot text-warning"
+                                                                 aria-hidden="true" focusable="false"
+                                                                 data-prefix="fas" data-icon="circle-dot" role="img"
+                                                                 xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 512 512" data-fa-i2svg="">
+                                                                <path fill="currentColor"
+                                                                      d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 352C309 352 352 309 352 256C352 202.1 309 160 256 160C202.1 160 160 202.1 160 256C160 309 202.1 352 256 352z">
+                                                                </path>
+                                                            </svg>
+                                                            <p class="text-300 m-0 ps-1">2 people</p>
+                                                        </div>
+                                                        <p class="fs-0 mt-3">
+                                                            해당 프로젝트는 졸업 프로젝트로 진행된 프로젝트입니다.<br>
+                                                            기존에 수기로 작성할 수 있는 가계부에 음성 입력 및 출력과 OCR 기능을 사용하여 시각 장애인도 가계부를
+                                                            관리할 수 있도록 개발되었습니다.<br>
+                                                            JAVA, PHP와 Eclipse, Android Studio, MySQL Workbench 등의 개발
+                                                            도구를 사용하였으며, OCR, TTS, SST API를 활용하여
+                                                            사용자가 음성으로 텍스트 입력 및 텍스트 출력할 수 있습니다.<br>
+                                                            시각적 정보와 더불어 대신 음성 안내와 터치 기능을 사용하여 사용자가 보다 쉽게 가계부를 관리할 수
+                                                            있습니다.
+                                                            <br><br>
+                                                            담당
+                                                            <br>
+                                                            - 화면 설계<br>- 영수증의 카메라 촬영 및 갤러리 이미지의 텍스트 인식<br>-
+                                                            Text-to-Speech로 텍스트를 인식하여 음성으로 변환<br>- 카테고리별
+                                                            지출 내역 분석 및 음성 출력
+                                                        </p>
+                                                        <button class="btn btn-link text-warning p-0 fs-2"><span
+                                                                class="fw-bolder">Details </span>
+                                                            <img class="ms-3" src="assets/img/icons/long-arrow.png"
+                                                                 alt=""/></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="swiper-theme swiper-pagination d-flex mt-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of .container-->
+
+                </section>
+                <!-- <section> close ============================-->
+                <!-- ============================================-->
+
+
+                <!-- ============================================-->
+                <!-- 기업체 요청에 맞춘 ERP 시스템 <section> begin ============================-->
+                  <section class="py-3 position-relative" id="project3">
+                    <div class="container-fluid px-0 mb-8 col-10">
+                        <h1 class="display-5 mb-3">Project</h1>
+                        <hr>
+                        <div class="portfolio_details_inner">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="left_img">
+                                        <img class="img-fluid"
+                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMTA1/MDAxNjgzNzQ3NTkyNjk3.QhGzrMlNNzstCS5QbfnNZS9SDu5XiLJc43AO-0aDntwg.qWMsJa2awyI801xuJpQ28PoBMLyi5TJ4AS_lJUBNRfYg.JPEG.wow_m8/0010.jpg?type=w966"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-5">
+                                    <div class="portfolio_right_text mt-30">
+                                        <h4 class="text-uppercase mb-6">여행지 정보 공유 블로그</h4>
+
+                                        <span>작업 기간</span>: 2023-03- ~ ing<br>
+                                        <span>참여 인원</span>: 1명<br>
+                                        <span>기여도</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><br>
+                                        <span>프로젝트 목적 : </span>블로그 형식으로 사용자들이 자유롭게 여행지 정보를 공유하는 블로그<br>
+                                        <span>사용언어 및 개발 환경</span>
+                                        : Mysql, Java, spring-boot, JPA, spring-mvc, html-css-javascript,
+                                        bootstrap5,
+                                        spring security<br><br>
+                                        <span>주요 역할</span><br>
+                                        데이터베이스 설계<br>
+                                        서비스 기획 및 방향성 설계<br>
+                                        로그인, 회원가입, QnA 게시판, 여행지 공유 게시판, 개인 프로필 설정 기능 구현
+                                        Google Maps API를 사용하여 여행지 정보 출력<br>
+                                        <p class="fs-0 mt-3">
+                                            해당 프로젝트는 블로그 형식의 여행지 정보 공유 프로젝트입니다.<br>
+                                            사용자들이 자유로운 형식으로 여행지 정보를 공유할 수 있도록 블로그 형식으로 개발되었습니다.<br>
+                                            자유로운 형식으로 작성하기 위해 Summernote를 사용하여 본문에 표, 사진, 링크 등의 첨부가 가능합니다.<br>
+                                            Google Maps API를 사용하여 여행지명을 검색하기만 하면 해당 여행지의 정보가 자동으로 등록됩니다.<br>
+                                            Spring Security를 적용하여 회원만 게시글 작성 및 수정, 삭제가 가능합니다.
+                                        </p>
+
+                                        <button class="btn btn-link text-warning p-0 fs-2">
+                                          <a class="fw-bolder" href="https://github.com/moosoony/mootravel">github </a>
+                                            <img class="ms-3" src="assets/img/icons/long-arrow.png" alt=""/></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section> close ============================-->
+                <!-- ============================================-->
+
+                <!-- ============================================-->
+                <!-- <section> begin ============================-->
+                <section class="py-3 position-relative">
+                    <div class="container-fluid px-0 mb-4 col-10">
+                        <h1 class="display-5 mb-3">Project Detail Slide</h1>
+                        <hr>
+                        <div class="container px-md-5">
+                            <div class="row g-0">
+
+                                <div class="col-lg-12 pb-6 px-0 mb-lg-0">
+                                    <div class="swiper-container swiper-theme"
+                                         data-swiper='{"slidesPerView":1,"breakpoints":{"576":{"slidesPerView":1.2}},"spaceBetween":30,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"loop":true,"loopedSlides":3,"slideToClickedSlide":true}'>
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://images.velog.io/images/mooh2jj/post/40729f9a-7ad9-445c-9a8d-5297f440b22e/spring_boot_logo.jpg"
+                                                             alt=""/>
+
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"/></div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">프로젝트 상세 기술 스택</p>
+                                                        <p class="fs-0 mt-3">
+                                                            Back-End<br>Java 11, RESTful API, JPA
+                                                            <br><br>
+
+                                                            Front-End<br>
+                                                            HTML5, CSS, JavaScript<br><br>
+
+                                                            Server<br>
+                                                            Apache Tomcat<br><Br>
+
+                                                            DB<br>
+                                                            MySQL<br><br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMjMx/MDAxNjgzNzQ3MzAzMDUw.nSQWT8gJlXSfkP2LGT0xaElRB6BUjrFw5NMTllYlmYMg.pLDLnI24ZNtDo7nAhI1phGuRo3HRB6Mm8k7IKBrJbT8g.JPEG.wow_m8/0001.jpg?type=w966"
+                                                             alt=""/>
+
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">로그인</p>
+                                                        <p class="fs-0 mt-3">
+                                                            Spring Security로 로그인 기능을 구현했습니다.<br><br>
+                                                            로그인(인증)하지 않은 회원이 인증을 요구하는 페이지에 접속할 경우, 로그인 페이지로 이동하여 보안을 강화했습니다.<br>
+                                                            로그인할 때, 데이터를 잘못 입력하여 발생한 오류 정보를 BindingResult 객체를 통해 사용자가 알 수 있도록 구현했습니다.
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfNTYg/MDAxNjgzNzQ3MzAzMDcw.WnHbbFnnSrFQaNsg2sfyUCNdmP_3tSUX6BiIMPzto4sg.EO3BQqTInyKFNGvCtvCiF9eUKsSSSjn9hEF3X66rHz4g.JPEG.wow_m8/0002.jpg?type=w966"
+                                                             alt=""/>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">회원가입</p>
+                                                        <p class="fs-0 mt-3">
+                                                          Spring Security로 회원가입 기능을 구현했습니다.<br>
+                                                          비밀번호를 암호화하는 PasswordEncoder 인터페이스로 비밀번호를 암호화하여 저장하여 악의적인 공격자가 데이터베이스에 저장된 비밀번호를 복호화하여 알아낼 수 없도록 보안성을 높일 수 있도록 구현했습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMTgw/MDAxNjgzNzQ3MzAzMDU4.4UZ2ezwxmR8qM0y4RSwNiHw2bj7saWvKXzkJZzGTXwMg.0HX-mC2x99D77rsRhKBDn5ZmcpXAbSc9OMC_mOhy5q0g.JPEG.wow_m8/0003.jpg?type=w966"
+                                                             alt=""/>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">QnA 질문 등록</p>
+                                                        <p class="fs-0 mt-3">
+                                                            QnA 질문 등록 기능을 구현했습니다.<br>
+                                                            사용자는 문의사항이 있을 경우, QnA 질문 등록을 통해 가능합니다.
+                                                            파일 첨부 기능도 구현하여, 사용자는 이미지 파일을 첨부할 수도 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMjA5/MDAxNjgzNzQ3MzAzMDcy.Y-vqTadsdgT49kga9hSEtjqiSo-2uBfK20NGjg_kAWcg.j8D39b7dhwZZvyWGtgn6rV5gHJasO-vV4eZKbqP7J2sg.JPEG.wow_m8/0004.jpg?type=w966"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">질문에 대한 답변 기능</p>
+                                                        <p class="fs-0 mt-3">
+                                                          질문에 대한 답변 기능을 구현했습니다.<br>
+                                                          JPA(Java Persistence API)에서 제공하는 관계 매핑 기능을 통해 질문에 대한 답변을 등록 및 수정, 삭제가 가능합니다.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMTg4/MDAxNjgzNzQ3MzAzMDYz.tDlMDVNQpWS7We8InPoOwEFg4XyH9QX4gSFfKDWWwuYg.Wi9XBEqOw0hTLkqMJs5jFoYMCLCSC7-wBeAv64C-4F0g.JPEG.wow_m8/0005.jpg?type=w966"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">QnA 검색</p>
+                                                        <p class="fs-0 mt-3">
+                                                          QnA 검색 기능을 구현했습니다.<br>
+                                                          제목, 내용, 글쓴이로 통합 검색이 가능합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMTIw/MDAxNjgzNzQ3MzAzMDc4.GClrgJj6QOiR9tzSBBPJ_Bf8yZK7QKF4dYhrDfuuIXsg.hCWoxHEkLwFKYQjWMazLBFqW2Z8HdyA9dF1jCbj0DTUg.JPEG.wow_m8/0006.jpg?type=w966"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">여행지 정보 등록 모달창</p>
+                                                        <p class="fs-0 mt-3">
+                                                          여행지 정보 등록 모달창 구현했습니다.<br>
+                                                          부트스트랩5로 여행지 정보 등록 모달창을 구현했습니다.<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMTE0/MDAxNjgzNzQ3MzAzMzQx.ikoVO7L7VkgkXXQK8bq5O_qiIL48QLLOKGlXCqlEst8g.FUqS3b6KZgjFBGmufQ3GdfrlR3UZYfgrvxaSk0eHTGcg.JPEG.wow_m8/0007.jpg?type=w966"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">여행지 정보 등록</p>
+                                                        <p class="fs-0 mt-3">
+                                                          여행지 정보 등록 기능을 구현했습니다.<br>
+                                                          Google Mpas API로 지도를 불러와 검색창에 여행지를 검색하여 마커를 선택하면 동적으로 여행지 정보가 담긴 카드가 생성됩니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMTEx/MDAxNjgzNzQ3MzAzMzg3.x5Ab0lFj5DE6yK4Yc8ZjS2GE2UwH_fSWS0OWlS1BsbQg.Wt9uVZ7Rps269yikhpfPHwssG9Sfv3cYUEXV0l0faiUg.JPEG.wow_m8/0008.jpg?type=w966"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">여행지 정보 등록</p>
+                                                        <p class="fs-0 mt-3">
+                                                          여행지 정보 등록 기능을 구현했습니다.<br>
+                                                           여행지 정보 내용 작성시, 자유로운 양식으로 작성이 가능하도록 Summernote API를 사용하여 표, 링크, 이미지 삽입 등이 가능합니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMjY2/MDAxNjgzNzQ3MzAzMzk3.TE6Kn9PiIn88CdMFVZ3vSCgiFLYv-UbAUC6H2sIhC7Ag.inF5hRX8iK3FUWY0ClbA35YEtggCgj1hajBLHu5hT9Ig.JPEG.wow_m8/0009.jpg?type=w966"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">여행지 정보 공유 상세 페이지</p>
+                                                        <p class="fs-0 mt-3">
+                                                          여행지 정보 공유 상세 페이지에서 댓글, 좋아요, 조회수 기능을 구현했습니다.
+                                                          좋아요는 중복으로 할 수 없으며 다시 좋아요 버튼을 눌렀을 경우, 좋아요가 취소됩니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="row align-items-xl-center">
+                                                    <div class="col-lg-5">
+                                                        <img class="img-fluid w-100"
+                                                             src="https://postfiles.pstatic.net/MjAyMzA1MTFfMTUw/MDAxNjgzNzQ3NTkyNjU1.iieXt3KufNyekAHDkRM7-n7gnqwr5_u9eDNxvqtOb9kg.Ayp8odXEcfurG6tXqvqisgnOKrGxJnMfB3pl_FsgVn8g.JPEG.wow_m8/0011.jpg?type=w966"
+                                                             alt=""/>
+                                                        <div class="position-absolute top-5 start-5 mt-n1 d-flex flex-column align-items-center">
+                                                            <span class="rounded-circle bg-white p-2 d-block"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-5 mt-4 mt-lg-0">
+                                                        <p class="text-warning fs-3 opacity-75">개인 프로필 설정</p>
+                                                        <p class="fs-0 mt-3">
+                                                          개인 프로필 설정 페이지에서 사용자의 정보를 수정할 수 있으며, 파일 업로드 기능을 구현하여 프로필 사진을 설정할 수 있습니다.<br>
+                                                          사용자는 회원 탈퇴를 할 수 있으며, 작성한 모든 정보가 삭제되며 되돌릴 수 없습니다.<br>
+                                                          개인 활동 기록도 볼 수 있으며, 작성글, 작성 댓글, 작성 댓글의 글, 좋아요한 글, 질문글을 볼 수 있습니다.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                      
+                                    </div>
+                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of .container-->
+
+                </section>
+                <!-- <section> close ============================-->
+                <!-- ============================================-->
+
+
+
+            </div>
+        </div>
+    </section>
+</main>
+<!-- ===============================================-->
+<!--    End of Main Content-->
+<!-- ===============================================-->
+
+
+<footer class="bg-footer-black" id="footer">
+    <div class="container py-7 px-md-5">
+        <div class="row g-0">
+            <div class="col-md-6 mb-5 mb-md-0">
+                <div class="mb-4 d-inline-block"><a class="navbar-brand pt-0 fs-3 text-white d-flex align-items-center"
+                                                    href="index.html">
+                    <img class="img-fluid" src="assets/img/icons/dark-logo-icon.png" alt="" width="25" height="25"/>
+                    <span class="fw-bolder ms-2">김무경</span><span class="fw-thin">Contact</span></a></div>
+                <div class="col-12 col-md-10 text-300 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                  <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z"/>
+                </svg><a
+                        class="nav-link text-300 d-inline" href="https://github.com/moosoony">https://github.com/moosoony</a>
+                </div>
+                <div class="col-12 col-md-10 text-300 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                  <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z"/>
+                </svg><a
+                        class="nav-link text-300 d-inline" href="https://moosoony.tistory.com/">https://moosoony.tistory.com/</a>
+                </div>
+                <div class="col-12 col-md-10 text-300 mb-3"><i class="fas fa-map-marker-alt"></i><a
+                  class="nav-link text-300 d-inline" href="https://moosoony.tistory.com/">경기도 수원시 권선구 구운로 47번길 59</a>
+          </div>
+                <div class="col-12 col-md-10 text-300 mb-3"><i class="fas fa-phone"></i><a
+                        class="nav-link text-300 d-inline"
+                        href="tel:010-8670-2230">010-8670-2230</a></div>
+                <div class="col-12 col-md-10 text-300 mb-3"><i class="fas fa-envelope"></i><a
+                        class="nav-link text-300 d-inline" href="mailto:moogyong@naver.com">moogyong@naver.com</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- ============================================-->
+<!-- <section> begin ============================-->
+<section class="bg-black py-0">
+
+    <div class="container px-md-5">
+        <div class="row g-0 justify-content-md-between justify-content-evenly py-4">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
+                <p class="fs--1 my-2 fw-light text-100">@2023</p>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6">
+                <p class="fs--1 fw-light my-2 text-center text-md-end text-100"> Made with&nbsp;
+                    <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                         fill="#F95C19"
+                         viewBox="0 0 16 16">
+                        <path
+                                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z">
+                        </path>
+                    </svg>&nbsp;by&nbsp;<a class="fw-bold text-warning" href="https://themewagon.com/"
+                                           target="_blank">ThemeWagon</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- end of .container-->
+
+
+</section>
+<!-- <section> close ============================-->
+<!-- ============================================-->
+
+
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+<script src="vendors/popper/popper.min.js"></script>
+<script src="vendors/bootstrap/bootstrap.min.js"></script>
+<script src="vendors/anchorjs/anchor.min.js"></script>
+<script src="vendors/is/is.min.js"></script>
+<script src="vendors/fontawesome/all.min.js"></script>
+<script src="vendors/lodash/lodash.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="vendors/prism/prism.js"></script>
+<script src="vendors/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/theme.js"></script>
+
+</body>
+
+</html>
